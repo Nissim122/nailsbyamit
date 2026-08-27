@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#d6bba2">
+  <meta name="description" content="מניקוריסטית ברמת גן — עמית אבן צור, Nails by Amit. מניקור ג'ל, בניית ציפורניים ועיצובי לק במתחם הבורסה, רמת גן. קבעו תור בוואטסאפ עוד היום.">
+  <meta name="keywords" content="מניקוריסטית ברמת גן, מניקור ג'ל רמת גן, בניית ציפורניים רמת גן, עיצובי לק רמת גן, מניקור בורסה רמת גן, מניקוריסטית מומלצת רמת גן, נייל ארט רמת גן, מניקור פדיקור רמת גן">
+  <meta name="author" content="עמית אבן צור">
+  <meta name="robots" content="index, follow">
+  <title>מניקוריסטית ברמת גן | Nails by Amit — עמית אבן צור</title>
+
+  <!-- TODO: לעדכן לכתובת הדומיין הסופית כשהאתר יעלה לאוויר -->
+  <link rel="canonical" href="https://nailsbyamit.co.il/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="business.business">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:site_name" content="Nails by Amit">
+  <meta property="og:title" content="מניקוריסטית ברמת גן | Nails by Amit — עמית אבן צור">
+  <meta property="og:description" content="מניקור ג'ל, בניית ציפורניים ועיצובי לק ברמת גן, מתחם הבורסה. מניקוריסטית מקצועית עם יחס אישי — קבעו תור בוואטסאפ.">
+  <meta property="og:url" content="https://nailsbyamit.co.il/">
+  <meta property="og:image" content="https://nailsbyamit.co.il/photo-nails-1.jpg">
+  <meta property="og:image:width" content="1152">
+  <meta property="og:image:height" content="2048">
+  <meta property="og:image:alt" content="עבודת ציפורניים מאת עמית אבן צור, מניקוריסטית ברמת גן">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="מניקוריסטית ברמת גן | Nails by Amit">
+  <meta name="twitter:description" content="מניקור ג'ל, בניית ציפורניים ועיצובי לק ברמת גן — עמית אבן צור, מתחם הבורסה.">
+  <meta name="twitter:image" content="https://nailsbyamit.co.il/photo-nails-1.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="logo-amit-nails.svg">
+  <link rel="apple-touch-icon" href="logo-amit-nails.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Structured data — עסק מקומי (מניקוריסטית) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NailSalon",
+    "name": "Nails by Amit — עמית אבן צור, מניקוריסטית ברמת גן",
+    "description": "מניקוריסטית מקצועית ברמת גן — מניקור ג'ל, בניית ציפורניים ועיצובי לק, עם דגש על היגיינה, חיטוי הציוד ויחס אישי.",
+    "image": "https://nailsbyamit.co.il/photo-nails-1.jpg",
+    "logo": "https://nailsbyamit.co.il/logo-amit-nails.svg",
+    "telephone": "+972549151945",
+    "email": "amitezur@gmail.com",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "בצלאל 12",
+      "addressLocality": "רמת גן",
+      "addressRegion": "תל אביב",
+      "addressCountry": "IL"
+    },
+    "areaServed": "רמת גן",
+    "url": "https://nailsbyamit.co.il/",
+    "sameAs": [
+      "https://www.instagram.com/amit.evenzur.nails",
+      "https://www.tiktok.com/@amit.evenzur.nails",
+      "https://www.facebook.com/search/top?q=nails%20by%20amit"
+    ]
+  }
+  </script>
+
+  <style>
+    /* ═══ PALETTE — נגזר מהצבע שנשלח: #d6bba2 ═══ */
+    :root {
+      --bg: #f3e8db;         /* קרם בהיר, גזור מ-#d6bba2 — רוב הדף */
+      --primary: #d6bba2;    /* הצבע שנשלח — צבע הבסיס הדומיננטי (hero/footer/sticky/מיקום) */
+      --primary-d: #c2a488;  /* גוון כהה יותר של הצבע — hover */
+      --accent: #b6754a;     /* טרקוטה — CTA בלבד, שימוש מצומצם */
+      --accent-d: #96603a;
+      --text: #2e2018;       /* אספרסו כהה — טקסט/אייקונים/מסגרות בלבד, לא רקעים גדולים */
+      --bg-dark: #2e2018;    /* alias לתאימות (טקסט/מסגרות) */
+      --text-light: #f3e8db; /* alias לתאימות */
+      --border: rgba(46,32,24,.15);
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    button { font-family: inherit; }
+    html { scroll-behavior: smooth; overflow-x: hidden; background: var(--bg); }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: 'Assistant', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+      width: 100%;
+      padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px));
+    }
+    @media (min-width: 768px) { body { padding-bottom: 0; } }
+
+    .display-xl { font-size: clamp(2rem, 8vw, 3.6rem); font-weight: 800; line-height: 1.1; letter-spacing: -.03em; }
+    /* צבע קבוע (לא accent/primary) — accent/primary על הרקעים בדף לא עומדים ב-4.5:1 בגודל טקסט הזה */
+    .section-label {
+      font-size: .88rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--text);
+      text-align: center; position: relative; padding-bottom: .7rem;
+    }
+    /* פס הדגשה קטן מתחת לכל כותרת סקשן */
+    .section-label::after {
+      content: ''; position: absolute; bottom: 0; right: 50%; transform: translateX(50%);
+      width: 32px; height: 3px; border-radius: 2px; background: var(--accent-d);
+    }
+    .skip-link { position: absolute; top: -100%; right: 0; background: var(--bg-dark); color: #fff; padding: .75rem 1.5rem; font-weight: 700; z-index: 9999; text-decoration: none; }
+    .skip-link:focus { top: 0; }
+    .sr-only { position: absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+    /* ─── HEADER ─── */
+    .site-header { position: fixed; top: 0; right: 0; left: 0; z-index: 200; background: var(--bg); border-bottom: 2px solid var(--bg-dark); }
+    .site-nav { padding: .85rem 1.5rem; display: flex; align-items: center; justify-content: space-between; }
+    .site-logo { font-weight: 800; font-size: 1.1rem; color: var(--text); letter-spacing: -.02em; text-decoration: none; }
+    .nav-call { font-size: .85rem; font-weight: 700; color: var(--text); text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 1px; display: inline-flex; align-items: center; gap: .3rem; }
+
+    /* ─── HERO (כרטיס ביקור) ─── */
+    .hero { background: var(--primary); position: relative; overflow: hidden; }
+    .hero-texture {
+      position: absolute; inset: 0;
+      background-image: radial-gradient(circle at 70% 15%, rgba(255,255,255,.4) 0%, transparent 55%),
+                        radial-gradient(circle at 10% 85%, rgba(46,32,24,.08) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    /* padding-top גדול כדי לפנות מקום לעיגול הלוגו שיושב חצי על התמונה, חצי מתחתיה */
+    .hero-inner { position: relative; z-index: 1; max-width: 460px; margin: 0 auto; padding: 5.2rem 1.5rem 3rem; text-align: center; }
+
+    /* במובייל: תמונה על כל רוחב המסך, צמודה לראש ה-hero (בלי ריווח עליון/צדדי) */
+    .hero-photo-wrap { position: relative; z-index: 1; }
+    .hero-photo { width: 100%; aspect-ratio: 4 / 2.43; overflow: hidden; }
+    .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 42%; display: block; }
+    @media (min-width: 768px) {
+      .hero-photo {
+        max-width: 300px; margin: 2.2rem auto 0;
+        border-radius: 14px;
+        border: 3px solid rgba(46,32,24,.15);
+        box-shadow: 0 10px 30px rgba(46,32,24,.2);
+      }
+    }
+
+    /* עיגול-לוגו — כמו תמונת פרופיל עסקית בוואטסאפ: יושב חצי-חצי על קו התחתית של התמונה */
+    .avatar {
+      position: absolute; right: 50%; bottom: 0; transform: translate(50%, 50%);
+      width: 128px; height: 128px; border-radius: 50%;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      background: #fff; color: var(--text);
+      border: 1px solid rgba(46,32,24,.12);
+      box-shadow: 0 10px 26px rgba(46,32,24,.3);
+    }
+    .avatar img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; }
+
+    .brand-name { color: var(--text); margin-bottom: .3rem; }
+    .brand-sub { color: var(--text); font-weight: 700; font-size: 1.05rem; margin-bottom: 1.1rem; opacity: .85; }
+    .brand-tag { color: rgba(46,32,24,.75); font-size: .98rem; line-height: 1.6; margin-bottom: 1.6rem; }
+
+    .social-row { display: flex; justify-content: center; gap: .9rem; margin-bottom: 1.8rem; }
+    .social-btn {
+      width: 46px; height: 46px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(46,32,24,.07); border: 1.5px solid rgba(46,32,24,.3);
+      color: var(--text); transition: background .18s, transform .18s, border-color .18s;
+    }
+    .social-btn:hover { background: var(--text); color: var(--bg); border-color: var(--text); transform: translateY(-2px); }
+
+    .cta-stack { display: flex; flex-direction: column; gap: .7rem; max-width: 320px; margin: 0 auto; }
+    .cta-primary {
+      display: flex; align-items: center; justify-content: center; gap: .6rem;
+      background: var(--accent); color: #fff; font-weight: 800; font-size: 1.05rem;
+      padding: 1rem 1.5rem; border-radius: 4px; text-decoration: none;
+      box-shadow: 4px 4px 0 rgba(0,0,0,.25); transition: transform .15s, box-shadow .15s, background .15s;
+    }
+    .cta-primary:hover { background: var(--accent-d); transform: translate(-2px,-2px); box-shadow: 6px 6px 0 rgba(0,0,0,.25); }
+    .cta-primary:active { transform: translate(2px,2px); box-shadow: 1px 1px 0 rgba(0,0,0,.25); }
+    .cta-secondary {
+      display: flex; align-items: center; justify-content: center; gap: .6rem;
+      background: transparent; color: var(--text); font-weight: 700; font-size: .95rem;
+      padding: .85rem 1.5rem; border-radius: 4px; border: 2px solid rgba(46,32,24,.35);
+      text-decoration: none; transition: border-color .15s, background .15s;
+    }
+    .cta-secondary:hover { border-color: rgba(46,32,24,.65); background: rgba(46,32,24,.06); }
+
+    /* ─── ABOUT ─── */
+    .about-section { padding: .5rem 1.5rem 3rem; }
+    .about-wrap { max-width: 480px; margin: 0 auto; text-align: right; }
+    .about-text { font-size: 1rem; line-height: 1.75; color: var(--text); }
+    .about-text:not(:last-child) { margin-bottom: 1rem; }
+    .about-text strong { font-weight: 700; }
+
+    /* ─── TESTIMONIALS ─── */
+    .testi-section { padding: 1rem 1.5rem 3rem; }
+    .testi-wrap { max-width: 480px; margin: 0 auto; }
+    .testi-card { background: #fff; border: 2px solid var(--bg-dark); border-radius: 6px; padding: 1.4rem; box-shadow: 0 4px 20px rgba(46,32,24,.1); text-align: center; }
+    .testi-stars { color: #F59E0B; font-size: 1rem; letter-spacing: .06em; margin-bottom: .6rem; }
+    .testi-text { font-size: 1rem; font-weight: 600; line-height: 1.55; color: var(--text); margin-bottom: 1rem; }
+    .testi-avatar { width: 40px; height: 40px; border-radius: 50%; margin: 0 auto .5rem; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: .95rem; color: #fff; }
+    .testi-author-name { font-weight: 800; font-size: .88rem; }
+
+    .carousel-wrap { overflow: hidden; touch-action: pan-y; }
+    .carousel-track { display: flex; transition: transform .44s cubic-bezier(.4,0,.2,1); }
+    .carousel-slide { min-width: 100%; padding: 0 .25rem; }
+    .c-dot { width: 24px; height: 24px; border-radius: 50%; background: transparent; border: none; cursor: pointer; padding: 0; position: relative; }
+    .c-dot::after { content: ''; width: 7px; height: 7px; border-radius: 50%; background: rgba(46,32,24,.2); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: background .2s, transform .2s; }
+    .c-dot.active::after { background: var(--text); transform: translate(-50%,-50%) scale(1.5); }
+    .c-arrow {
+      width: 44px; height: 44px; border-radius: 3px; background: #fff; border: 2px solid var(--text);
+      color: var(--text); font-size: 1.15rem; display: flex; align-items: center; justify-content: center;
+      cursor: pointer; box-shadow: 2px 2px 0 var(--text); flex-shrink: 0;
+    }
+    .c-arrow:hover { background: var(--text); color: #fff; }
+
+    /* ─── LOCATION ─── */
+    .location-section { background: var(--primary); padding: 2.8rem 1.5rem; text-align: center; }
+    .location-section p.addr { color: var(--text); font-size: 1rem; font-weight: 600; margin-bottom: 1.2rem; line-height: 1.5; }
+    .waze-btn {
+      display: inline-flex; align-items: center; gap: .6rem;
+      background: var(--text); color: var(--bg); font-weight: 800; font-size: .95rem;
+      padding: .8rem 1.6rem; border-radius: 4px; text-decoration: none;
+      transition: transform .15s, background .15s;
+    }
+    .waze-btn:hover { background: #fff; color: var(--text); transform: translateY(-2px); }
+
+    /* ─── FOOTER ─── */
+    footer { background: var(--primary); padding: 2rem 1.5rem; border-top: 1px solid rgba(46,32,24,.1); text-align: center; }
+    footer .foot-name { color: var(--text); font-weight: 800; font-size: 1rem; margin-bottom: .5rem; }
+    /* אלפא מוקפצת (במקום .65/.5/.4) — על רקע --primary היא לא עמדה ב-4.5:1 */
+    footer .foot-line { color: rgba(46,32,24,.82); font-size: .82rem; margin-top: .2rem; }
+    footer .foot-line a { color: inherit; text-decoration: none; }
+    footer .legal-links { margin-top: 1rem; display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap; }
+    footer .legal-links button { background: none; border: none; cursor: pointer; color: rgba(46,32,24,.8); font-size: .74rem; text-decoration: underline; padding: .5rem; min-height: 44px; display: inline-flex; align-items: center; }
+    footer .copyright { font-size: .7rem; color: rgba(46,32,24,.75); margin-top: .3rem; }
+    footer .copyright:first-of-type { margin-top: 1rem; }
+    footer .copyright a { color: inherit; text-decoration: underline; }
+
+    /* ─── STICKY BAR (mobile) ─── */
+    .sticky-bar { position: fixed; bottom: 0; right: 0; left: 0; z-index: 100; background: var(--primary); padding: .65rem 1rem calc(.75rem + env(safe-area-inset-bottom, 0px)); border-top: 3px solid var(--accent); }
+    @media (min-width: 768px) { .sticky-bar { display: none; } }
+    .sticky-bar a { display: flex; align-items: center; justify-content: center; gap: .5rem; width: 100%; text-align: center; background: var(--accent); color: #fff; font-weight: 800; font-size: 1rem; padding: .85rem; border-radius: 4px; box-shadow: 3px 3px 0 rgba(0,0,0,.3); text-decoration: none; }
+
+    /* ─── WHATSAPP FLOAT ─── */
+    .wa-btn {
+      position: fixed; bottom: calc(100px + env(safe-area-inset-bottom, 0px)); left: max(16px, env(safe-area-inset-left, 16px)); z-index: 99;
+      width: 50px; height: 50px; border-radius: 50%; background: #25D366;
+      display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(37,211,102,.5);
+      transition: transform .2s cubic-bezier(.34,1.56,.64,1);
+    }
+    .wa-btn:hover { transform: scale(1.1); }
+    @media (min-width: 768px) { .wa-btn { bottom: 24px; left: 16px; } }
+
+    /* ─── COOKIE ─── */
+    .cookie-bar { position: fixed; top: 0; right: 0; left: 0; z-index: 210; background: #fff; border-bottom: 2px solid var(--bg-dark); padding: .7rem 1.2rem; box-shadow: 0 4px 16px rgba(0,0,0,.1); display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    .cookie-bar[hidden] { display: none; }
+    .cookie-close { background: var(--bg-dark); color: #fff; border: none; border-radius: 3px; padding: .4rem 1.1rem; min-height: 44px; font-size: .8rem; font-weight: 700; cursor: pointer; white-space: nowrap; }
+
+    /* ─── MODALS ─── */
+    .legal-overlay { position: fixed; inset: 0; z-index: 300; background: rgba(0,0,0,.6); overflow-y: auto; padding: 2rem 1rem; display: flex; align-items: flex-start; justify-content: center; }
+    .legal-overlay[hidden] { display: none; }
+    .legal-box { background: #fff; border: 2px solid var(--bg-dark); border-radius: 6px; width: 100%; max-width: 480px; padding: 1.6rem; margin: auto; box-shadow: 6px 6px 0 var(--bg-dark); }
+    .legal-box h2 { font-size: 1.1rem; font-weight: 800; margin-bottom: .8rem; }
+    .legal-box p { font-size: .82rem; color: #4B5563; line-height: 1.6; margin-bottom: .6rem; }
+    .legal-box a { color: var(--text); text-decoration: underline; }
+    .modal-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: .8rem; }
+    .modal-header h2 { margin-bottom: 0; }
+    .modal-close { width: 44px; height: 44px; border-radius: 3px; background: #F3F4F6; border: 2px solid var(--bg-dark); font-size: 1rem; cursor: pointer; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; }
+      html { scroll-behavior: auto; }
+    }
+
+    /* ─── FOCUS — טבעת מיקוד ברורה לניווט מקלדת, מכוונת לצבע כהה עם קונטראסט טוב על כל הרקעים בדף ─── */
+    a, button {
+      outline-offset: 2px;
+    }
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid var(--accent-d);
+      outline-offset: 2px;
+    }
+    .cta-primary:focus-visible, .sticky-bar a:focus-visible {
+      outline-color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main" class="skip-link">דלג לתוכן הראשי</a>
+
+  <div id="cookie-bar" class="cookie-bar" role="region" aria-label="הודעת עוגיות">
+    <p style="flex:1;min-width:180px;font-size:.8rem;color:#4B5563">
+      האתר משתמש ב-Google Fonts.
+      <button type="button" style="color:var(--text);background:none;border:none;cursor:pointer;font-size:inherit;padding:0;text-decoration:underline;font-weight:700" onclick="openModal('privacy')">מדיניות פרטיות</button>
+    </p>
+    <button type="button" class="cookie-close" onclick="acceptCookies()">הבנתי</button>
+  </div>
+
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="#" class="site-logo">Nails by Amit</a>
+      <a href="tel:0549151945" class="nav-call">
+        <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 5.94 5.94l.91-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        054-9151945
+      </a>
+    </nav>
+  </header>
+
+  <main id="main" style="padding-top: var(--header-h, 62px);">
+
+    <!-- ══════════════════════════
+         HERO — כרטיס ביקור
+    ══════════════════════════ -->
+    <section class="hero">
+      <div class="hero-texture"></div>
+
+      <div class="hero-photo-wrap">
+        <div class="hero-photo">
+          <img src="photo-nails-1.jpg" alt="עבודת ציפורניים מאת עמית אבן צור — עיצוב לק פרנץ' עם נקודות" width="1152" height="2048">
+        </div>
+        <div class="avatar">
+          <img src="logo-amit-nails.svg" alt="Amit Nails" width="128" height="128">
+        </div>
+      </div>
+
+      <div class="hero-inner">
+
+        <h1 class="display-xl brand-name">עמית אבן צור</h1>
+        <p class="brand-sub">Nails by Amit | מניקוריסטית ברמת גן</p>
+        <p class="brand-tag">מניקור ג'ל &nbsp;·&nbsp; בניית ציפורניים &nbsp;·&nbsp; עיצובי לק<br>רמת גן — מתחם הבורסה</p>
+
+        <div class="social-row">
+          <a class="social-btn" href="https://www.instagram.com/amit.evenzur.nails?igsh=bGVzbGlhOTI4ZzI5&utm_source=qr" target="_blank" rel="noopener" aria-label="אינסטגרם">
+            <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a class="social-btn" href="https://www.tiktok.com/@amit.evenzur.nails?_t=ZP-8zKXH34S2M2&_r=1" target="_blank" rel="noopener" aria-label="טיקטוק">
+            <svg aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12.75 2h3.1c.17 1.42.87 2.63 1.98 3.43 1.03.75 2.24 1.1 3.47 1.1v3.15c-1.56.02-3.05-.42-4.35-1.22v6.53c0 3.6-2.94 6.51-6.55 6.51S3.85 18.6 3.85 15c0-3.35 2.52-6.13 5.83-6.47v3.22a3.3 3.3 0 0 0-1.34-.06 3.28 3.28 0 0 0-2.6 2.68 3.28 3.28 0 0 0 3.24 3.84 3.28 3.28 0 0 0 3.28-3.28V2z"/></svg>
+          </a>
+          <a class="social-btn" href="https://www.facebook.com/search/top?q=nails%20by%20amit" target="_blank" rel="noopener" aria-label="פייסבוק">
+            <svg aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12z"/></svg>
+          </a>
+        </div>
+
+        <div class="cta-stack">
+          <a class="cta-primary" href="https://wa.me/972549151945?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%9E%D7%99%D7%AA%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%9B%D7%A8%D7%98%D7%99%D7%A1%20%D7%94%D7%91%D7%99%D7%A7%D7%95%D7%A8%20%D7%94%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%AA%D7%95%D7%A8" target="_blank" rel="noopener">
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+            קבעי תור בוואטסאפ
+          </a>
+          <a class="cta-secondary" href="tel:0549151945">
+            <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 5.94 5.94l.91-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            התקשרי — 054-9151945
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════
+         ABOUT
+    ══════════════════════════ -->
+    <section class="about-section">
+      <div class="about-wrap">
+        <h2 class="section-label" style="margin-bottom:.8rem;">קצת עליי 💕</h2>
+        <p class="about-text">היי, אני עמית, מניקוריסטית שמאמינה ש<strong>יופי אמיתי מתחיל בטיפוח, בריאות ובהרגשה טובה</strong>.</p>
+        <p class="about-text">מבחינתי, מניקור הוא הרבה מעבר לציפורניים יפות. חשוב לי שתצאי ממני לא רק עם תוצאה שאת אוהבת, אלא גם עם <strong>תחושה נעימה, רגועה ומפנקת</strong>.</p>
+        <p class="about-text">אני מקפידה על <strong>עבודה מקצועית</strong>, סביבת עבודה נקייה והיגיינית ו<strong>חיטוי יסודי</strong> של הציוד והעמדה, כדי שתוכלי להרגיש בטוחה ונינוחה לאורך כל הטיפול.</p>
+        <p class="about-text">הדבר שהכי חשוב לי הוא <strong>לשמור על הציפורניים שלך בריאות וחזקות</strong>, תוך התאמת הטיפול אלייך ולצרכים שלך.</p>
+        <p class="about-text">אני כאן כדי לתת לך מקום לעצור לרגע, להתפנק, ולצאת עם ציפורניים שאת פשוט אוהבת. 💅🏼</p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════
+         TESTIMONIALS
+    ══════════════════════════ -->
+    <section class="testi-section" role="region" aria-label="ביקורות לקוחות">
+      <div class="testi-wrap">
+        <h2 class="section-label" style="text-align:center;margin-bottom:1rem;">מה אומרות עלי</h2>
+
+        <div class="carousel-wrap">
+          <div class="carousel-track" id="track">
+
+            <div class="carousel-slide">
+              <div class="testi-card">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">"היוש רק רציתי להגיד שעשית לי לק פשוט מדהים! אני מאוהבת!"</p>
+                <div class="testi-avatar" style="background:linear-gradient(135deg,#c98a72,#96603a);">ש</div>
+                <p class="testi-author-name">שני גבעוני</p>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <div class="testi-card">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">"הקליניקה מאוד אסטטית ויפה והיחס האישי מורגש"</p>
+                <div class="testi-avatar" style="background:linear-gradient(135deg,#d6bba2,#96603a);">ע</div>
+                <p class="testi-author-name">עידית אזולאי</p>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <div class="testi-card">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">"אני מתה על איך שיצא הבנייה!!!"</p>
+                <div class="testi-avatar" style="background:linear-gradient(135deg,#b6754a,#2e2018);">ס</div>
+                <p class="testi-author-name">סתיו גבאי</p>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <div class="testi-card">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">"יצא נדיר, מתה על העבודות שלך"</p>
+                <div class="testi-avatar" style="background:linear-gradient(135deg,#e9dccb,#b6754a);">א</div>
+                <p class="testi-author-name">אבלין יעקב</p>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <div class="testi-card">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">"רק רציתי לומר שכל פעם שאני מגיעה אני פשוט מרגישה הקלה. כל כך כיף לבוא אלי לדבר איתך ולצאת עם שלמות של לק"</p>
+                <div class="testi-avatar" style="background:linear-gradient(135deg,#96603a,#d6bba2);">א</div>
+                <p class="testi-author-name">אריאל רוזנברג</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:1rem;">
+          <button type="button" class="c-arrow" id="prev" aria-label="ביקורת הקודמת"><span aria-hidden="true">‹</span></button>
+          <div style="display:flex;gap:.4rem;align-items:center;">
+            <button type="button" class="c-dot active" data-idx="0" aria-label="ביקורת 1" aria-current="true"></button>
+            <button type="button" class="c-dot" data-idx="1" aria-label="ביקורת 2" aria-current="false"></button>
+            <button type="button" class="c-dot" data-idx="2" aria-label="ביקורת 3" aria-current="false"></button>
+            <button type="button" class="c-dot" data-idx="3" aria-label="ביקורת 4" aria-current="false"></button>
+            <button type="button" class="c-dot" data-idx="4" aria-label="ביקורת 5" aria-current="false"></button>
+          </div>
+          <button type="button" class="c-arrow" id="next" aria-label="ביקורת הבאה"><span aria-hidden="true">›</span></button>
+        </div>
+        <div id="carousel-status" class="sr-only" aria-live="polite">ביקורת 1 מתוך 5</div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════
+         LOCATION
+    ══════════════════════════ -->
+    <section id="location" class="location-section" aria-label="מניקוריסטית ברמת גן — בצלאל 12, מתחם הבורסה">
+      <h2 class="section-label" style="margin-bottom:.8rem;">איפה נמצא</h2>
+      <p class="addr">בצלאל 12, רמת גן<br>מתחם הבורסה</p>
+      <a class="waze-btn" href="https://www.waze.com/ul?q=%D7%91%D7%A6%D7%9C%D7%90%D7%9C%2012%2C%20%D7%A8%D7%9E%D7%AA%20%D7%92%D7%9F&navigate=yes" target="_blank" rel="noopener">
+        <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        ניווט בוויז
+      </a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="foot-name">Nails by Amit — עמית אבן צור</p>
+    <p class="foot-line"><a href="tel:0549151945">054-9151945</a> · <a href="mailto:amitezur@gmail.com">amitezur@gmail.com</a></p>
+    <div class="legal-links">
+      <button type="button" onclick="openModal('privacy')">מדיניות פרטיות</button>
+      <button type="button" onclick="openModal('accessibility')">הצהרת נגישות</button>
+    </div>
+    <p class="copyright">© 2026 Nails by Amit. כל הזכויות שמורות.</p>
+    <p class="copyright">נבנה ע"י <a href="https://clix-automations.com/" target="_blank" rel="noopener">Clix Automations</a></p>
+  </footer>
+
+  <!-- STICKY BAR (mobile) -->
+  <div class="sticky-bar">
+    <a href="https://wa.me/972549151945?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%9E%D7%99%D7%AA%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%9B%D7%A8%D7%98%D7%99%D7%A1%20%D7%94%D7%91%D7%99%D7%A7%D7%95%D7%A8%20%D7%94%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%AA%D7%95%D7%A8" target="_blank" rel="noopener">
+      <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+      קבעי תור — 054-9151945
+    </a>
+  </div>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/972549151945?text=%D7%94%D7%99%D7%99%20%D7%A2%D7%9E%D7%99%D7%AA%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%9B%D7%A8%D7%98%D7%99%D7%A1%20%D7%94%D7%91%D7%99%D7%A7%D7%95%D7%A8%20%D7%94%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%AA%D7%95%D7%A8" class="wa-btn" aria-label="פתח WhatsApp" target="_blank" rel="noopener">
+    <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- MODALS -->
+  <div id="modal-privacy" class="legal-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="privacy-title">
+    <div class="legal-box">
+      <div class="modal-header">
+        <h2 id="privacy-title">מדיניות פרטיות</h2>
+        <button type="button" class="modal-close" onclick="closeModal('privacy')" aria-label="סגור"><span aria-hidden="true">✕</span></button>
+      </div>
+      <p><strong>עדכון אחרון:</strong> אוגוסט 2026</p>
+      <p>אתר זה אינו אוסף פרטים אישיים ישירות. יצירת קשר דרך טלפון או וואטסאפ כרוכה בעיבוד מידע על-ידי ספקי השירות. האתר משתמש ב-Google Fonts בהתאם ל<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">מדיניות הפרטיות של Google</a>. אין שימוש בקודי מעקב או אנליטיקה.</p>
+      <p><a href="mailto:amitezur@gmail.com">amitezur@gmail.com</a> | <a href="tel:0549151945">054-9151945</a></p>
+    </div>
+  </div>
+
+  <div id="modal-accessibility" class="legal-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="access-title">
+    <div class="legal-box">
+      <div class="modal-header">
+        <h2 id="access-title">הצהרת נגישות</h2>
+        <button type="button" class="modal-close" onclick="closeModal('accessibility')" aria-label="סגור"><span aria-hidden="true">✕</span></button>
+      </div>
+      <p><strong>עדכון אחרון:</strong> אוגוסט 2026</p>
+      <p>האתר עומד ברמת AA של תקן WCAG 2.1: ניווט מקלדת, תמיכה בקוראי מסך, ניגודיות תקנית. נתקלת בבעיה? נטפל תוך 5 ימי עסקים: <a href="mailto:amitezur@gmail.com">amitezur@gmail.com</a></p>
+    </div>
+  </div>
+
+  <script>
+    // Carousel
+    const track = document.getElementById('track');
+    const dots = document.querySelectorAll('.c-dot');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const statusEl = document.getElementById('carousel-status');
+    let current = 0, timer;
+    const paused = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+    function goTo(idx) {
+      current = (idx + slides.length) % slides.length;
+      track.style.transform = `translateX(${current * 100}%)`;
+      dots.forEach((d, i) => {
+        d.classList.toggle('active', i === current);
+        d.setAttribute('aria-current', i === current ? 'true' : 'false');
+      });
+      statusEl.textContent = `ביקורת ${current + 1} מתוך ${slides.length}`;
+    }
+    function resetTimer() {
+      clearInterval(timer);
+      if (!paused) timer = setInterval(() => goTo(current + 1), 4500);
+    }
+    document.getElementById('next').addEventListener('click', () => { goTo(current + 1); resetTimer(); });
+    document.getElementById('prev').addEventListener('click', () => { goTo(current - 1); resetTimer(); });
+    dots.forEach(d => d.addEventListener('click', () => { goTo(+d.dataset.idx); resetTimer(); }));
+
+    const cWrap = document.querySelector('.carousel-wrap');
+    let tx0 = 0;
+    cWrap.addEventListener('touchstart', e => { tx0 = e.changedTouches[0].clientX; }, { passive: true });
+    cWrap.addEventListener('touchend', e => {
+      const diff = tx0 - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 44) { diff > 0 ? goTo(current + 1) : goTo(current - 1); resetTimer(); }
+    }, { passive: true });
+    resetTimer();
+
+    // Layout: keep the sticky header below the cookie bar (if visible) and
+    // size main's top padding to clear both — they're both position:fixed/top:0,
+    // so without this the cookie bar would render on top of (hide) the header.
+    const cookieBarEl = document.getElementById('cookie-bar');
+    const headerEl = document.querySelector('.site-header');
+    const mainEl = document.getElementById('main');
+    function updateLayout() {
+      const cookieH = cookieBarEl.hidden ? 0 : cookieBarEl.offsetHeight;
+      headerEl.style.top = cookieH + 'px';
+      mainEl.style.paddingTop = (cookieH + headerEl.offsetHeight) + 'px';
+    }
+
+    // Cookie
+    if (localStorage.getItem('ck_ok')) { cookieBarEl.hidden = true; }
+    updateLayout();
+    function acceptCookies() {
+      cookieBarEl.hidden = true;
+      localStorage.setItem('ck_ok', '1');
+      updateLayout();
+    }
+    window.addEventListener('resize', updateLayout);
+
+    // Modals
+    let _lastFocus = null;
+    function openModal(id) {
+      _lastFocus = document.activeElement;
+      const m = document.getElementById('modal-' + id);
+      m.hidden = false;
+      document.body.style.overflow = 'hidden';
+      const first = m.querySelector('button,a,[tabindex]');
+      if (first) first.focus();
+      m.addEventListener('click', e => { if (e.target === m) closeModal(id); }, { once: true });
+    }
+    function closeModal(id) {
+      const m = document.getElementById('modal-' + id);
+      m.hidden = true;
+      document.body.style.overflow = '';
+      if (_lastFocus) _lastFocus.focus();
+    }
+    document.addEventListener('keydown', e => {
+      const openId = ['privacy', 'accessibility'].find(id => !document.getElementById('modal-' + id).hidden);
+      if (!openId) return;
+      if (e.key === 'Escape') { closeModal(openId); return; }
+      // לכידת מיקוד בתוך המודאל הפתוח כשלוחצים Tab, כך שהמיקוד לא בורח לתוכן שמאחורי הרקע הכהה
+      if (e.key === 'Tab') {
+        const m = document.getElementById('modal-' + openId);
+        const focusable = m.querySelectorAll('button,a[href],[tabindex]:not([tabindex="-1"])');
+        if (!focusable.length) return;
+        const firstEl = focusable[0], lastEl = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === firstEl) { e.preventDefault(); lastEl.focus(); }
+        else if (!e.shiftKey && document.activeElement === lastEl) { e.preventDefault(); firstEl.focus(); }
+      }
+    });
+
+    // Hide sticky bar when location/footer area is visible
+    const locEl = document.getElementById('location');
+    const stickyBar = document.querySelector('.sticky-bar');
+    const stickyLink = stickyBar.querySelector('a');
+    const io = new IntersectionObserver(entries => {
+      const h = entries[0].isIntersecting;
+      stickyBar.style.opacity = h ? '0' : '1';
+      stickyBar.style.pointerEvents = h ? 'none' : 'auto';
+      stickyBar.setAttribute('aria-hidden', h ? 'true' : 'false');
+      stickyLink.tabIndex = h ? -1 : 0;
+    }, { threshold: 0.2 });
+    io.observe(locEl);
+  </script>
+
+</body>
+</html>
