@@ -10,8 +10,8 @@
   <meta name="robots" content="index, follow">
   <title>מניקוריסטית ברמת גן | Nails by Amit — עמית אבן צור</title>
 
-  <!-- TODO: לעדכן לכתובת הדומיין הסופית כשהאתר יעלה לאוויר -->
-  <link rel="canonical" href="https://nailsbyamit.co.il/">
+  <!-- דומיין חי: amit.clix-automations.com -->
+  <link rel="canonical" href="https://amit.clix-automations.com/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="business.business">
@@ -19,8 +19,8 @@
   <meta property="og:site_name" content="Nails by Amit">
   <meta property="og:title" content="מניקוריסטית ברמת גן | Nails by Amit — עמית אבן צור">
   <meta property="og:description" content="מניקור ג'ל, בניית ציפורניים ועיצובי לק ברמת גן, מתחם הבורסה. מניקוריסטית מקצועית עם יחס אישי — קבעו תור בוואטסאפ.">
-  <meta property="og:url" content="https://nailsbyamit.co.il/">
-  <meta property="og:image" content="https://nailsbyamit.co.il/photo-nails-1.jpg">
+  <meta property="og:url" content="https://amit.clix-automations.com/">
+  <meta property="og:image" content="https://amit.clix-automations.com/photo-nails-1.jpg">
   <meta property="og:image:width" content="1152">
   <meta property="og:image:height" content="2048">
   <meta property="og:image:alt" content="עבודת ציפורניים מאת עמית אבן צור, מניקוריסטית ברמת גן">
@@ -29,7 +29,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="מניקוריסטית ברמת גן | Nails by Amit">
   <meta name="twitter:description" content="מניקור ג'ל, בניית ציפורניים ועיצובי לק ברמת גן — עמית אבן צור, מתחם הבורסה.">
-  <meta name="twitter:image" content="https://nailsbyamit.co.il/photo-nails-1.jpg">
+  <meta name="twitter:image" content="https://amit.clix-automations.com/photo-nails-1.jpg">
 
   <link rel="icon" type="image/svg+xml" href="logo-amit-nails.svg">
   <link rel="apple-touch-icon" href="logo-amit-nails.svg">
@@ -45,8 +45,8 @@
     "@type": "NailSalon",
     "name": "Nails by Amit — עמית אבן צור, מניקוריסטית ברמת גן",
     "description": "מניקוריסטית מקצועית ברמת גן — מניקור ג'ל, בניית ציפורניים ועיצובי לק, עם דגש על היגיינה, חיטוי הציוד ויחס אישי.",
-    "image": "https://nailsbyamit.co.il/photo-nails-1.jpg",
-    "logo": "https://nailsbyamit.co.il/logo-amit-nails.svg",
+    "image": "https://amit.clix-automations.com/photo-nails-1.jpg",
+    "logo": "https://amit.clix-automations.com/logo-amit-nails.svg",
     "telephone": "+972549151945",
     "email": "amitezur@gmail.com",
     "priceRange": "$$",
@@ -58,7 +58,7 @@
       "addressCountry": "IL"
     },
     "areaServed": "רמת גן",
-    "url": "https://nailsbyamit.co.il/",
+    "url": "https://amit.clix-automations.com/",
     "sameAs": [
       "https://www.instagram.com/amit.evenzur.nails",
       "https://www.tiktok.com/@amit.evenzur.nails",
@@ -263,6 +263,85 @@
     .modal-header h2 { margin-bottom: 0; }
     .modal-close { width: 44px; height: 44px; border-radius: 3px; background: #F3F4F6; border: 2px solid var(--bg-dark); font-size: 1rem; cursor: pointer; }
 
+    /* ═══════════════════════════════════════════════════════
+       DESKTOP ENHANCEMENTS — משפר את התצוגה במסכים גדולים.
+       הכל בתוך media queries של ≥768px / ≥1024px בלבד,
+       כך שתצוגת המובייל נשארת בדיוק כפי שהיא.
+    ═══════════════════════════════════════════════════════ */
+    @media (min-width: 768px) {
+      /* ── HEADER — יישור לרוחב מיכל אחיד ── */
+      .site-nav { max-width: 1120px; margin: 0 auto; padding: 1rem 2.5rem; }
+      .site-logo { font-size: 1.2rem; }
+      .nav-call { font-size: .95rem; }
+
+      /* ── HERO — פריסת שתי עמודות: טקסט מימין, תמונה משמאל ── */
+      .hero {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(2.5rem, 6vw, 5.5rem);
+        padding: 4.5rem 2.5rem 5.5rem;
+      }
+      .hero-photo-wrap { flex: 0 0 auto; align-self: center; }
+      .hero-photo {
+        width: clamp(260px, 28vw, 320px);
+        aspect-ratio: 4 / 4.6;   /* קרופ פורטרט — מנצל טוב יותר את התמונה ומאזן מול עמודת הטקסט */
+        max-width: none;
+        margin: 0;
+      }
+      .hero-inner {
+        flex: 0 0 auto;
+        max-width: 420px;
+        margin: 0;
+        padding: 0;
+        text-align: right;
+      }
+      .brand-name { font-size: clamp(2.6rem, 3.6vw, 3.4rem); }
+      .brand-sub { font-size: 1.15rem; }
+      .brand-tag { font-size: 1.05rem; margin-bottom: 1.8rem; }
+      .social-row { justify-content: flex-start; margin-bottom: 1.8rem; }
+      .cta-stack { margin: 0; max-width: 360px; }
+
+      /* ── כותרות סקשן ── */
+      .section-label { font-size: .95rem; }
+
+      /* ── ABOUT ── */
+      .about-section { padding: 3rem 2rem 3.5rem; }
+      .about-wrap { max-width: 640px; }
+      .about-text { font-size: 1.06rem; line-height: 1.85; }
+
+      /* ── TESTIMONIALS — רשת קבועה במקום קרוסלה (רואים הכל בבת אחת) ── */
+      .testi-section { padding: 3rem 2rem 4rem; }
+      .testi-wrap { max-width: 960px; }
+      .carousel-wrap { overflow: visible; touch-action: auto; }
+      .carousel-track {
+        transform: none !important;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.1rem;
+        transition: none;
+      }
+      .carousel-slide { min-width: 0; padding: 0; }
+      .testi-card { height: 100%; }
+      .carousel-nav { display: none !important; }
+
+      /* ── LOCATION ── */
+      .location-section { padding: 3.8rem 2rem; }
+      .location-section p.addr { font-size: 1.1rem; }
+
+      /* ── FOOTER ── */
+      footer { padding: 3rem 2rem; }
+    }
+
+    @media (min-width: 1024px) {
+      .hero { gap: 6rem; padding: 5.5rem 2.5rem 6rem; }
+      .hero-photo { width: clamp(300px, 26vw, 350px); aspect-ratio: 4 / 4.8; }
+      .hero-inner { max-width: 460px; }
+      .about-wrap { max-width: 680px; }
+      .carousel-track { grid-template-columns: repeat(3, 1fr); }
+    }
+
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; }
       html { scroll-behavior: auto; }
@@ -324,7 +403,7 @@
 
         <h1 class="display-xl brand-name">עמית אבן צור</h1>
         <p class="brand-sub">Nails by Amit | מניקוריסטית ברמת גן</p>
-        <p class="brand-tag">מניקור ג'ל &nbsp;·&nbsp; בניית ציפורניים &nbsp;·&nbsp; עיצובי לק<br>רמת גן — מתחם הבורסה</p>
+        <p class="brand-tag">מניקור ג'ל &nbsp;·&nbsp; בניית ציפורניים &nbsp;·&nbsp; עיצובי לק</p>
 
         <div class="social-row">
           <a class="social-btn" href="https://www.instagram.com/amit.evenzur.nails?igsh=bGVzbGlhOTI4ZzI5&utm_source=qr" target="_blank" rel="noopener" aria-label="אינסטגרם">
@@ -424,7 +503,7 @@
           </div>
         </div>
 
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:1rem;">
+        <div class="carousel-nav" style="display:flex;align-items:center;justify-content:space-between;margin-top:1rem;">
           <button type="button" class="c-arrow" id="prev" aria-label="ביקורת הקודמת"><span aria-hidden="true">‹</span></button>
           <div style="display:flex;gap:.4rem;align-items:center;">
             <button type="button" class="c-dot active" data-idx="0" aria-label="ביקורת 1" aria-current="true"></button>
